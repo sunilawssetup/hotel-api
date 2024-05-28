@@ -1,0 +1,72 @@
+[
+  {
+    "hotelId": 1,
+    "hotelName": "Maharaja Vage",
+    "description": "Maharaja Vage hotel",
+    "items": [
+      {
+        "menueId": 1,
+        "name": "Paneer tika ",
+        "description": "it is one of spicy recipy for the ",
+        "price": 270,
+        "type": true,
+        "hotelId": 1
+      },
+      {
+        "menueId": 2,
+        "name": "Paneer angara ",
+        "description": "it is one of spicy recipy for the ",
+        "price": 370,
+        "type": true,
+        "hotelId": 1
+      }
+    ]
+  },
+  {
+    "hotelId": 2,
+    "hotelName": "Krushana Pure Vage",
+    "description": "Krushan puer vage hotel",
+    "items": [
+      {
+        "menueId": 3,
+        "name": "Paneer tika ",
+        "description": "it is one of spicy recipy for the ",
+        "price": 270,
+        "type": true,
+        "hotelId": 2
+      },
+      {
+        "menueId": 4,
+        "name": "Paneer palak ",
+        "description": "it is one of spicy recipy for the ",
+        "price": 370,
+        "type": true,
+        "hotelId": 2
+      },
+      {
+        "menueId": 5,
+        "name": "dal tadaka",
+        "description": "it is one of spicy recipy for the ",
+        "price": 170,
+        "type": true,
+        "hotelId": 2
+      },
+      {
+        "menueId": 6,
+        "name": "vada pav ",
+        "description": "it is one of spicy recipy for the ",
+        "price": 40,
+        "type": true,
+        "hotelId": 2
+      },
+      {
+        "menueId": 7,
+        "name": "bhendi masala ",
+        "description": "it is one of spicy recipy for the ",
+        "price": 270,
+        "type": true,
+        "hotelId": 2
+      }
+    ]
+  }
+]
