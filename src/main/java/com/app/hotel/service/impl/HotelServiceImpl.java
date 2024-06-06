@@ -1,11 +1,13 @@
 package com.app.hotel.service.impl;
 
 import com.app.hotel.dto.HotelDto;
+import com.app.hotel.dto.OrderIteamDto;
 import com.app.hotel.model.Hotel;
 import com.app.hotel.model.Menu;
 import com.app.hotel.repo.HotelRepo;
 import com.app.hotel.repo.MenuRepo;
 import com.app.hotel.service.IHotelService;
+import com.app.hotel.service.client.OrderFeign;
 import com.app.hotel.util.HotelMapper;
 import com.app.hotel.util.MenuMapper;
 import lombok.AllArgsConstructor;
@@ -29,6 +31,9 @@ public class HotelServiceImpl implements IHotelService {
 
     @Autowired
     private HotelRepo hotelRepo;
+
+    @Autowired
+    private OrderFeign orderFeign;
 
     @Override
     public boolean addHotel(HotelDto hotel) {
@@ -65,5 +70,15 @@ public class HotelServiceImpl implements IHotelService {
         }).collect(Collectors.toList());
 
         return collect1;
+    }
+
+    @Override
+    public List<OrderIteamDto> getAllOrders() {
+        return orderFeign.getAllOrders();
+    }
+
+    @Override
+    public OrderIteamDto updateOrderStatus(Long orderId, String orderStatus) {
+        return orderFeign.updateOrderStatus(orderId,orderStatus);
     }
 }
